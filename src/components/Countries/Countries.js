@@ -8,12 +8,9 @@ const Countries = () => {
     fetch('https://restcountries.com/v3.1/all').then(res=>res.json()).then(data=>setCountries(data));
   },[])
   return (
-    <div>
+    <div className='countries-container'>
       {
-        countries.map(country=>console.log(country))
-      }
-      {
-        countries.map(country=><Country country={country}></Country>)
+        countries.map(country=><Country country={country} key={country.cca3}></Country>)
       }
     </div>
   );

@@ -10,7 +10,7 @@ const Country = (props) => {
       <p>Area: {area}</p>
       <p>Population: {population}</p>
       <p>Timestamps: {timezones[0]}</p>
-      <img src={flags.png}></img>
+      <img src={flags.png} alt="Country Flag Image" />
     </div>
   );
 };
