@@ -1,0 +1,7 @@
+.countries img{
+  border: 1px solid gray;
+}
+.countries{
+  background-color: rgb(170, 170, 170);
+  padding: 40px 0px;
+}
